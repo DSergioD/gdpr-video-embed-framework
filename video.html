@@ -1,0 +1,106 @@
+<html lang="en-US"><head>
+    <meta charset="utf-8">
+    <title>Embed Video</title>
+    <meta name="generator" content="TYPO3 CMS">
+    <meta name="description" content="Description for search engines">
+    <link rel="stylesheet" href="css/video.css">
+</head>
+<body>
+<main>
+<section id="c1" class="videos-section activate-cookie">
+    <div class="video-ful-container">
+        <div class="video-row">
+            <div class="video-col">
+                <div
+                        class="video video-16by9 ratio-16x9 video-youtube video-container"
+                        data-embed-full="https://youtu.be/C0-EXXv7_fo?si=5gcMjQu2WppRh_TI"
+                        data-embed=""
+                        tabindex="0"
+                >
+                    <div class="video-item-cookie">
+                        <div class="video-cookie-description"><button class="btn-cookie-accept">External content is disabled. <br>Please activate here.</button> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="c2" class="videos-section activate-cookie">
+    <div class="video-ful-container">
+        <div class="video-row">
+            <div class="video-col">
+                <div
+                        class="video video-16by9 ratio-16x9 video-youtube video-container"
+                        data-embed-full="https://youtu.be/BRbqHApHwzY?si=O7ycbZ-rapCkGv74"
+                        data-embed=""
+                        tabindex="0"
+                >
+                    <div class="video-item-cookie">
+                        <div class="video-cookie-description"><button class="btn-cookie-accept">External content is disabled. <br>Please activate here.</button> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="c3" class="videos-section activate-cookie">
+    <div class="video-ful-container">
+        <div class="video-row">
+            <div class="video-col">
+                <div
+                        class="video video-16by9 ratio-16x9 video-vimeo video-container"
+                        data-embed-full="https://vimeo.com/16462472?fl=pl&fe=sh"
+                        data-embed=""
+                        tabindex="0"
+                >
+                    <div class="video-item-cookie">
+                        <div class="video-cookie-description"><button class="btn-cookie-accept">External content is disabled. <br>Please activate here.</button> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <button class="close">&times;</button>
+        <button class="accept">Cookie Accept</button>
+    </div>
+
+</div>
+<script src="javascript/video.js"></script>
+<script>
+    var modal = document.getElementById("myModal");
+    const videoItemCookie = document.querySelectorAll('.video-item-cookie');
+    videoItemCookie.forEach(item => {
+        var btn = item.querySelector(".btn-cookie-accept");
+        btn.addEventListener('click', function () {
+            modal.style.display = "block";
+            item.remove();
+        });
+    });
+    var span = document.querySelectorAll(".close");
+    span.forEach(item => {
+        item.addEventListener('click', function () {
+            modal.style.display = "none";
+        });
+    });
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    var btnAcceept = document.querySelectorAll(".accept");
+    btnAcceept.forEach(item => {
+        item.addEventListener('click', function () {
+            startVideo();
+            modal.style.display = "none";
+        });
+    });
+</script>
+
+</body>
+</html>

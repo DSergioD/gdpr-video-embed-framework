@@ -1,0 +1,118 @@
+.video-container{aspect-ratio:16/9;contain:layout}.shorts .video.video-16by9{max-width:23.5625rem;max-height:unset;margin-right:auto;margin-left:auto}.shorts .video.video-16by9 img:not(.vimeo-thumbs):not(.yt-author-logo){height:100%;top:0;object-fit:cover;object-position:center center;content-visibility:auto}.video.video-9by16,.thumb-youtube.video-9by16{max-width:23.5625rem;max-height:unset;margin-right:auto;margin-left:auto}.video.video-9by16 img:not(.vimeo-thumbs):not(.yt-author-logo),.thumb-youtube.video-9by16 img:not(.vimeo-thumbs):not(.yt-author-logo){height:100%;top:0;object-fit:cover;object-position:center center}.video .youtube-play,.thumb-youtube .youtube-play{width:4.25rem;height:3.6rem;position:absolute;inset:0;margin:auto;text-align:center;font-size:3.75rem;line-height:0;cursor:pointer;z-index:1;overflow:hidden;opacity:.8}.video .youtube-play:after,.thumb-youtube .youtube-play:after{content:"";background-color:#fff;width:1.8rem;height:1.7rem;display:block;position:absolute;inset:0;margin:auto;z-index:-1}.video-item:hover .youtube-play,.video-item:focus .youtube-play{color:red;opacity:1}.video-item:hover .vimeo-play,.video-item:focus .vimeo-play{background-color:#00adef}.video-item img:not(.vimeo-thumbs):not(.yt-author-logo){width:100%;min-height:100%;position:absolute;top:-16.7%;left:0;cursor:pointer}.video-item img.vimeo-thumbs{width:100%;position:absolute;top:0;left:0;cursor:pointer}.video:hover .youtube-play,.video:focus .youtube-play{color:red;opacity:1}.video:hover .vimeo-play,.video:focus .vimeo-play{background-color:#00adef}.embed-title-text{position:absolute;top:0;left:0;width:100%;max-width:100%;font-size:1rem;color:#fff;font-family:Noto Sans,sans-serif;padding:1rem 1rem 0 .8rem;text-shadow:.125rem .125rem .125rem rgba(0,0,0,.14);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.embed-title-text .yt-author-logo{width:2.5rem;height:2.5rem;background-size:contain;background-repeat:no-repeat;background-origin:content-box;float:left;border-radius:50%;flex-shrink:0;margin:0 .6125rem 0 0;display:inline-block}.embed-title-text .yt-title{display:inline-block;float:left;height:2.5rem;line-height:2.5rem;max-width:calc(100% - 3.25rem);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.vimeo-play{width:4.0625rem;height:2.5rem;position:absolute;inset:0;margin:auto;cursor:pointer;z-index:1;overflow:hidden;text-align:center;background:#00adef;border-radius:.5em;color:#fff}.video-loader{width:3.5rem;height:3.5rem;position:absolute;inset:0;margin:auto;text-align:center;color:#000;z-index:-1}.video-loader i{color:#000;font-size:3.5rem}.video-modal .video-modal-overlay,.embed-modal-overlay{position:absolute;display:none;width:100%;height:100%;top:0;left:0;z-index:1000;cursor:pointer}.mobile-overlay{position:absolute;display:block;width:100%;height:100%;top:0;left:0;z-index:1000;cursor:pointer}.modal-video{max-width:62.5rem;top:0;left:0;right:0;margin:auto}.modal-video.fade:before{content:"";display:inline-block;height:100%;vertical-align:middle;margin-right:-.25rem}.modal-video .modal-dialog{max-width:unset;width:100%;position:relative;display:inline-block;text-align:left;vertical-align:middle;top:auto;padding:0 .9375rem;margin:0}.modal-video .modal-dialog .modal-content{border-radius:0;background-color:transparent;box-shadow:none;-webkit-box-shadow:none;border:0}.modal-video .modal-dialog .modal-content .modal-header{padding:0;border:0}.modal-video .modal-dialog .modal-content .modal-header .close{padding:0;margin:0;position:absolute;top:-1.0625rem;right:-.625rem;font-size:2.5rem;font-weight:700;line-height:1;color:#fff;text-shadow:none;opacity:1;z-index:1}.embed-text p:last-of-type{margin-bottom:0}.video{position:relative;display:block;width:100%;padding:0;overflow:hidden}.video:before{display:block;content:""}.video .video-item,.video iframe,.video embed,.video object,.video video{position:absolute;top:0;bottom:0;left:0;width:100%;height:100%;border:0}.video-21by9:before{padding-top:42.8571428571%}.video-16by9:before{padding-top:56.25%}.video-4by3:before{padding-top:75%}.video-1by1:before{padding-top:100%}
+
+.video .youtube-play:after,
+.thumb-youtube .youtube-play:after {
+    background-color: red;
+    width: 3.8rem;
+    height: 2.7rem;
+    border-radius: 16px;
+}
+.videos-section.activate-cookie .youtube-play.has-outline {
+    display: block;
+}
+.video-play .youtube-play.has-outline {
+    display: none;
+}
+
+.youtube-play.has-outline .icon-video-play {
+    fill: #fff;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    height: 200px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    appearance: none;
+    border: 0;
+    background: transparent;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.video-item-cookie .btn-cookie-accept {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 350px;
+    max-height: 100px;
+    appearance: none;
+    border: 0;
+    color: #000;
+    background: transparent;
+    text-decoration: underline;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.videos-section:not(:last-of-type) {
+    margin-bottom: 50px;
+}
+
+button.accept {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 350px;
+    max-height: 100px;
+    appearance: none;
+    border: 0;
+    color: #000;
+    background: transparent;
+    text-decoration: underline;
+    font-size: 20px;
+    cursor: pointer;
+}
+.vimeo-play svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.activate-cookie .video-ful-container {
+    border: 1px solid #000;
+}
+.video-ful-container {
+    max-width: 1000px;
+    margin: auto;
+}
