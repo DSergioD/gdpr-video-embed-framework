@@ -1,0 +1,21 @@
+# --- Mac OS sistemski fajlovi ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- PHPStorm / JetBrains podešavanja ---
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# --- TYPO3 / PHP specifično ---
+# Ako kasnije budeš koristio Composer, ovi redovi su obavezni:
+vendor/
+node_modules/
+.env
+
+# --- Privremeni fajlovi ---
+*.log
+*.tmp
+*.swp
